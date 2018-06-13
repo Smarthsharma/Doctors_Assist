@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_pane" prefHeight="442.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctor.s.assist.patientcontroller">
+   <children>
+      <AnchorPane layoutX="6.0" prefHeight="442.0" prefWidth="596.0">
+         <children>
+            <Label layoutX="177.0" layoutY="28.0" prefHeight="53.0" prefWidth="247.0" text="Patient Registeration !!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="347.0" fitWidth="599.0" layoutX="-12.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="name" layoutX="63.0" layoutY="117.0" promptText="name" />
+            <RadioButton fx:id="male" layoutX="331.0" layoutY="122.0" mnemonicParsing="false" selected="true" text="male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="female" layoutX="388.0" layoutY="122.0" mnemonicParsing="false" text="female" toggleGroup="$gender" />
+            <RadioButton fx:id="other" layoutX="453.0" layoutY="122.0" mnemonicParsing="false" text="others" toggleGroup="$gender" />
+            <DatePicker fx:id="dob" layoutX="63.0" layoutY="169.0" prefHeight="31.0" prefWidth="187.0" promptText="date of birth" />
+            <TextField fx:id="contact" layoutX="331.0" layoutY="221.0" promptText="contact        " />
+            <TextField fx:id="email" layoutX="331.0" layoutY="275.0" promptText="email" />
+            <TextArea fx:id="add" layoutX="63.0" layoutY="215.0" prefHeight="91.0" prefWidth="200.0" promptText="address" />
+            <Button fx:id="submit" layoutX="250.0" layoutY="360.0" mnemonicParsing="false" onAction="#onRegister" prefHeight="31.0" prefWidth="121.0" text="Submit" />
+            <Button fx:id="close" cancelButton="true" layoutX="496.0" layoutY="28.0" mnemonicParsing="false" onAction="#closeAction" text="X" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

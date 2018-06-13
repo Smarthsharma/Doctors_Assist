@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="main_pane" prefHeight="500.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctor.s.assist.MedicineadminController">
+   <children>
+      <TableView fx:id="medicine" layoutX="36.0" layoutY="209.0" prefHeight="222.0" prefWidth="711.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="209.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="company" prefWidth="75.0" text="comapny" />
+            <TableColumn fx:id="name" prefWidth="141.0" text="name" />
+            <TableColumn fx:id="composition" prefWidth="279.0" text="composition" />
+            <TableColumn fx:id="type" prefWidth="184.0" text="type" />
+           
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="315.0" layoutY="447.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Button fx:id="close" layoutX="410.0" layoutY="447.0" mnemonicParsing="false" onAction="#closeAction" text="close" />
+   </children>
+</AnchorPane>

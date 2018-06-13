@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_pane" prefHeight="398.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctor.s.assist.prescribeTestController">
+   <children>
+      <TableView fx:id="testtable" layoutX="64.0" layoutY="91.0" prefHeight="226.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="test_id" prefWidth="75.0" text="test_id" />
+          <TableColumn fx:id="test_name" prefWidth="304.0" text="test_name" />
+            <TableColumn fx:id="price" prefWidth="92.0" text="price" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="238.0" layoutY="337.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="close" layoutX="354.0" layoutY="337.0" mnemonicParsing="false" onAction="#closeAction" text="Close" />
+      <Label layoutX="181.0" layoutY="24.0" prefHeight="54.0" prefWidth="242.0" text="List Of Tests">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
